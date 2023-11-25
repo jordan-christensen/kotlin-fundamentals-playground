@@ -5,6 +5,7 @@ fun main() {
     // var name = "Kotlin" // mutable
     val myName = "Jordan" // immutable
 
+    // WHOLE NUMBERS
     // Integer
     val age: Int = 145
 
@@ -23,7 +24,7 @@ fun main() {
     println("Hello, my name is $myName. I'm $age years old. $byteUpperLimit, $byteLowerLimit, $myShort")
     println("Integer: $number, Long: $numberLong, ExplicitLong: $numberExplicitlyLong")
 
-    // Floating Point Type Numbers
+    // DECIMAL / FLOATING POINT NUMBERS
 
     // Float - Holds 32 bits
     val piFloat = 3.14f
