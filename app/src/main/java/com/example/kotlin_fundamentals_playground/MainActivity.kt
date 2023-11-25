@@ -100,12 +100,37 @@ fun main() {
         }
     }
 
-    sayHello()
+    sayHi()
+    calculate(multipleOf = 3)
+    val catAge = inCatYears(7)
+    val abbreviatedCatAge = abbreviatedCatYears(12)
+    println("This cat is $catAge years old")
+    println("This other cat is $abbreviatedCatAge years old")
 }
 
 // FUNCTIONS
-fun sayHello() {
+fun sayHi() {
     println("This is a function.")
 }
 
 // FUNCTIONS WITH INT PARAMETERS
+fun calculate(
+    first: Int = 2,
+    second: Int = 100,
+    message: String = "is a multiple of",
+    multipleOf: Int = 13
+) {
+    for (i in first..second) {
+        if (i % multipleOf == 0) {
+            println("$i $message $multipleOf")
+        }
+    }
+}
+
+// Return Types
+fun inCatYears(age: Int): Int {
+    return age * 7
+}
+
+// Abbreviated Function Syntax
+fun abbreviatedCatYears(age: Int): Int = age * 7
