@@ -100,6 +100,12 @@ fun main() {
         }
     }
 
-    // FUNCTIONS
-    
+    sayHello()
 }
+
+// FUNCTIONS
+fun sayHello() {
+    println("This is a function.")
+}
+
+// FUNCTIONS WITH INT PARAMETERS
