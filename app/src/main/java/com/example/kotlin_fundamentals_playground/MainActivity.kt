@@ -1,7 +1,7 @@
 package com.example.kotlin_fundamentals_playground
 
 fun main() {
-    // Types of Variables
+    // TYPES
     // var name = "Kotlin" // mutable
     val myName = "Jordan" // immutable
 
@@ -20,7 +20,8 @@ fun main() {
     val numberLong = 1L // This will be a long
     val numberExplicitlyLong: Long = 1 // This will be a long
 
-    println("Hello $myName I'm $age years old. $byteUpperLimit, $byteLowerLimit, $myShort")
+    println("Hello, my name is $myName. I'm $age years old. $byteUpperLimit, $byteLowerLimit, $myShort")
+    println("Integer: $number, Long: $numberLong, ExplicitLong: $numberExplicitlyLong")
 
     // Floating Point Type Numbers
 
@@ -43,4 +44,32 @@ fun main() {
 
     println("This float: $piFloat, this double: $piDouble")
     println("This float: $e, this double: $eFloat")
+
+    // OPERATORS
+    val a = 23
+    val b = 12
+    println(a + b)
+    println(a - b)
+    println(a * b)
+    println(a / b)
+
+    // Note: Dividing 23 (int) by 12 (int) results in 1 (int).
+    // This isn't mathematically precise and it occurs because we
+    // divided two ints. If even ONE of them were a double we would
+    // get the result 1.9166666667--much more mathematically precise.
+
+    // Modulo Operator
+    val modA = 10
+    val modB = 2
+    val modC = 3
+    // The modulo operator (%) divides one number by another number
+    // and returns the remainder or "modulus"
+    // so...
+    println("Modulus, Example 1: " + modA % modB)
+    // ...should return 0
+    // whereas...
+    println("Modulus, Example 2: " + modA % modC)
+    // ...should return 1
+
+
 }
