@@ -72,5 +72,34 @@ fun main() {
     println("Modulus, Example 2: " + modA % modC)
     // ...should return 1
 
+    // LOOPS AND BRANCHING
+    val amount = 100
 
+    // "if" statement
+    if (amount >= 1000) {
+        println("Wow... you are very wealthy")
+    } else {
+        println("You are getting by")
+    }
+
+    // "When" expression
+    when (amount) {
+        in 1..100 -> println("Between 1 and 100")
+        !in 10..90 -> println("Outside the range")
+        999 -> println("Really close")
+        1000 -> println("You made it!")
+        else -> {
+            println("$amount is the amount")
+        }
+    }
+
+    // "For" Loop
+    for (i in 1..1000) {
+        if (i % 113 == 0) {
+            println("$i is a multiple of 113")
+        }
+    }
+
+    // FUNCTIONS
+    
 }
