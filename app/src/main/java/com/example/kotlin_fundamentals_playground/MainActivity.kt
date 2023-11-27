@@ -176,6 +176,15 @@ fun main() {
         myNewList.add(i, "\"Hey there, $i\"")
     }
     println(myNewList)
+
+    // Empty Collections
+    // Whenever you create an empty list, you need to set the type
+    val empty = emptyList<String>()
+    val emptySet = emptySet<Int>()
+    // With maps, you must type the key and value
+    val emptyMap = emptyMap<String, Int>()
+
+    // COLLECTIONS: Filters
 }
 
 // FUNCTIONS
