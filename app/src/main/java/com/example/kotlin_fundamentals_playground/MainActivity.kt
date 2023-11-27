@@ -114,6 +114,27 @@ fun main() {
     enhancedMessage(message = "Hello there,") {
         add(12, 12)
     }
+
+    // COLLECTIONS
+    // Immutable lists
+    val myListOfNames = listOf("James", "Paul", "Rafael", "Gina")
+    println(myListOfNames)
+
+    // Looping through lists with For..In loops
+    for (item in myListOfNames) {
+        println(item)
+    }
+
+    // Looping using for...each loops
+    myListOfNames.forEach {
+        println(it)
+    }
+
+    // Mutable lists
+    val myMutableList = mutableListOf(12, 24, 45, 123)
+    myMutableList.add(214)
+    myMutableList.removeAt(0)
+    println(myMutableList)
 }
 
 // FUNCTIONS
@@ -123,10 +144,7 @@ fun sayHi() {
 
 // FUNCTIONS WITH INT PARAMETERS
 fun calculate(
-    first: Int = 2,
-    second: Int = 100,
-    message: String = "is a multiple of",
-    multipleOf: Int = 13
+    first: Int = 2, second: Int = 100, message: String = "is a multiple of", multipleOf: Int = 13
 ) {
     for (i in first..second) {
         if (i % multipleOf == 0) {
