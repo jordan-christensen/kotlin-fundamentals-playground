@@ -185,6 +185,16 @@ fun main() {
     val emptyMap = emptyMap<String, Int>()
 
     // COLLECTIONS: Filters
+    // Note: Filter is CASE SENSITIVE by default, but you can pass
+    // an ignoreCase boolean to change that
+    val found = myListOfNames.filter {
+        it == "Paul" || it.length > 4
+    }
+    val endsWithL = myListOfNames.filter {
+        it.endsWith("l")
+    }
+    println(found)
+    println(endsWithL)
 }
 
 // FUNCTIONS
