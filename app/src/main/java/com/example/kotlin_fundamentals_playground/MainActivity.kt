@@ -141,6 +141,16 @@ fun main() {
     println("Second element: ${myMutableList.get(1)}")
     // get index
     println("Index of element \"45\": ${myMutableList.indexOf(45)}")
+
+    // COLLECTIONS: SETS
+    // A set is a collection of unique elements. Order does not matter.
+    val mySet = setOf("US", "MZ", "AU") // immutable by default
+    val myMutableSet = mutableSetOf(1, 2, 3, 4, 5)
+    myMutableSet.add(34)
+    // if I try to add "3" to myMutableSet, nothing will happen
+    // because you can only add UNIQUE values to a set
+    println(myMutableSet)
+
 }
 
 // FUNCTIONS
