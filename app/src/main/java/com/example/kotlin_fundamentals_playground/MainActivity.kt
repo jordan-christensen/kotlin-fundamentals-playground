@@ -108,6 +108,12 @@ fun main() {
     println("This other cat is $abbreviatedCatAge years old")
     println(sum(1, 4))
     println(add(4, 6))
+    println(calcCatAge(10))
+    showName("Hello Kotlin!")
+    // Trailing Lambda
+    enhancedMessage(message = "Hello there,") {
+        add(12, 12)
+    }
 }
 
 // FUNCTIONS
@@ -144,3 +150,17 @@ fun sum(a: Int, b: Int): Int {
 
 // rewritten as a lambda function...
 val add: (Int, Int) -> Int = { a, b -> a + b }
+
+// using the Lambda "It" Keyword
+val calcCatAge: (Int) -> Int = { it * 7 }
+
+// Lambda Expressions that Return Unit - Void
+// Unit is a type meaning return value of void
+val showName: (String) -> Unit = { println(it) }
+
+//  TRAILING LAMBDA FUNCTIONS
+//  If the last argument in a Kotlin function is a lambda function, you can
+//  pass in that lambda function to the parent function and invoke it
+fun enhancedMessage(message: String, funAsParameter: () -> Int) {
+    println("$message ${funAsParameter()}")
+}
