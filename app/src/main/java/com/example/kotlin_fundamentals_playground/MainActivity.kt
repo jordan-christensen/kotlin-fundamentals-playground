@@ -195,6 +195,9 @@ fun main() {
     }
     println(found)
     println(endsWithL)
+
+    // NOTE: strings in Kotlin are defined by "" and chars are
+    // defined by ''
 }
 
 // FUNCTIONS
