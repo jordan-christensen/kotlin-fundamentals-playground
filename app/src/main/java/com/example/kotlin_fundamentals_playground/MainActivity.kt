@@ -106,6 +106,8 @@ fun main() {
     val abbreviatedCatAge = abbreviatedCatYears(12)
     println("This cat is $catAge years old")
     println("This other cat is $abbreviatedCatAge years old")
+    println(sum(1, 4))
+    println(add(4, 6))
 }
 
 // FUNCTIONS
@@ -134,3 +136,11 @@ fun inCatYears(age: Int): Int {
 
 // Abbreviated Function Syntax
 fun abbreviatedCatYears(age: Int): Int = age * 7
+
+// Lambda Functions
+fun sum(a: Int, b: Int): Int {
+    return a + b
+}
+
+// rewritten as a lambda function...
+val add: (Int, Int) -> Int = { a, b -> a + b }
