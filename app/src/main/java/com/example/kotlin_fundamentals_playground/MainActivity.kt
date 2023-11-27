@@ -118,7 +118,6 @@ fun main() {
     // COLLECTIONS
     // Immutable lists
     val myListOfNames = listOf("James", "Paul", "Rafael", "Gina")
-    println(myListOfNames)
 
     // Looping through lists with For..In loops
     for (item in myListOfNames) {
@@ -134,7 +133,14 @@ fun main() {
     val myMutableList = mutableListOf(12, 24, 45, 123)
     myMutableList.add(214)
     myMutableList.removeAt(0)
-    println(myMutableList)
+
+    // Invoking Methods on Lists
+    // size
+    println("Number of elements: ${myMutableList.size}")
+    // get element
+    println("Second element: ${myMutableList.get(1)}")
+    // get index
+    println("Index of element \"45\": ${myMutableList.indexOf(45)}")
 }
 
 // FUNCTIONS
