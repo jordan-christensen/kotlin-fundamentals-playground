@@ -153,7 +153,29 @@ fun main() {
     println(myMutableSet)
 
     // COLLECTIONS: MAPS
+    // 👇 immutable by default
+    val secretMap = mapOf("Up" to 1, "Down" to 2, "Left" to 3, "Right" to 4)
+    println(secretMap)
+    // methods
+    println(secretMap.values)
+    // conditional logic
+    // check to see if the key "Up" is contained
+    if ("Up" in secretMap) println("Yes is in!")
 
+    // 👇 create a mutable map
+    val myMutableSecretMap = mutableMapOf("One" to 1, "Two" to 2, "Three" to 3)
+    // add to a mutable map
+    myMutableSecretMap["Four"] = 4
+    println(myMutableSecretMap)
+
+    // Initializing Lists
+    // if we want to explicitly initialize a list, we can do this...
+    val myNewList = mutableListOf<String>()
+    myNewList.add("hey")
+    for (i in 1..10) {
+        myNewList.add(i, "\"Hey there, $i\"")
+    }
+    println(myNewList)
 }
 
 // FUNCTIONS
