@@ -129,6 +129,7 @@ fun main() {
         println(it)
     }
 
+    // COLLECTIONS: LISTS
     // Mutable lists
     val myMutableList = mutableListOf(12, 24, 45, 123)
     myMutableList.add(214)
@@ -150,6 +151,8 @@ fun main() {
     // if I try to add "3" to myMutableSet, nothing will happen
     // because you can only add UNIQUE values to a set
     println(myMutableSet)
+
+    // COLLECTIONS: MAPS
 
 }
 
