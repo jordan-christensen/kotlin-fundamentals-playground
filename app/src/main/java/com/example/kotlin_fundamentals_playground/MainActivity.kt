@@ -251,6 +251,15 @@ fun enhancedMessage(message: String, funAsParameter: () -> Int) {
 }
 
 class Car(var color: String = "Blue", var model: String = "xmdle") {
+    init {
+        if (color == "Green") {
+            println("It's green!")
+        } else {
+            println("It's not green")
+        }
+        color = "Yellow"
+        model = "KLM"
+    }
     fun drive() {
         println("Drive...vroooommm")
     }
