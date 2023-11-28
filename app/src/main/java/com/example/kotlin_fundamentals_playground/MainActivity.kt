@@ -198,6 +198,10 @@ fun main() {
 
     // NOTE: strings in Kotlin are defined by "" and chars are
     // defined by ''
+
+    var car = Car(color = "Green", model = "LLm")
+    println("Car color: ${car.color} model: ${car.model}")
+    car.drive()
 }
 
 // FUNCTIONS
@@ -244,4 +248,10 @@ val showName: (String) -> Unit = { println(it) }
 //  pass in that lambda function to the parent function and invoke it
 fun enhancedMessage(message: String, funAsParameter: () -> Int) {
     println("$message ${funAsParameter()}")
+}
+
+class Car(var color: String = "Blue", var model: String = "xmdle") {
+    fun drive() {
+        println("Drive...vroooommm")
+    }
 }
